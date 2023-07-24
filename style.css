@@ -441,7 +441,7 @@ body{
 }
 
 /* for tablet view */
-@media screen and (max-width:995px) and (min-width:768px) {
+@media screen and (max-width:990px) and (min-width:768px) {
     #header{
         padding:var(--padding-800) 6.4rem 0;
     }
@@ -502,6 +502,7 @@ body{
     .flex-item-1{
         order:1;
         width:20rem;
+        flex: 1;
     }
     .flex-item-1 > div{
         width:100%;
@@ -540,7 +541,8 @@ body{
     }
     .flex-item-3{
         order:3;
-        width: 20rem;
+        width:clamp(20rem, 10vh, 30rem);
+        flex:1;
     }
     .img9{
         height:30.9rem;
@@ -554,6 +556,7 @@ body{
 
 /* desktop view media query */
 @media screen and (min-width:1024px) and (max-width:1440px){
+
     #header{
         padding:var(--padding-1000) 6.4rem 0;
     }
